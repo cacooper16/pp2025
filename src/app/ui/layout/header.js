@@ -21,8 +21,8 @@ export default function Header() {
 						</a>
 					</div>
 					{/* Navigation links */}
-					<ul className="hidden md:flex space-x-10 absolute left-1/2 transform -translate-x-1/2 font-semibold text-center">
-						<li className="w-20">
+					<ul className="flex font-semibold text-center">
+						<li className="w-20 mx-4">
 							<a
 								href="#"
 								className="text-gray-700 hover:text-gray-900 hover:underline"
@@ -30,7 +30,7 @@ export default function Header() {
 								Services
 							</a>
 						</li>
-						<li className="w-20">
+						<li className="w-20 mx-4">
 							<a
 								href="#"
 								className="text-gray-700 hover:text-gray-900 hover:underline"
@@ -38,7 +38,7 @@ export default function Header() {
 								Work
 							</a>
 						</li>
-						<li className="w-20">
+						<li className="w-20 mx-4">
 							<a
 								href="#"
 								className="text-gray-700 hover:text-gray-900 hover:underline"
@@ -46,12 +46,17 @@ export default function Header() {
 								About
 							</a>
 						</li>
+						<li className="w-20 mx-4">
+							<a
+								href="#"
+								className="text-gray-700 hover:text-gray-900 hover:underline"
+							>
+								Contact
+							</a>
+						</li>
 					</ul>
 					{/* CTAs */}
 					<div className="flex items-center space-x-8">
-						<button className="text-gray-700 hover:text-gray-900 hover:underline font-semibold ">
-							Get in Touch
-						</button>
 						<a
 							href="https://cal.com/productpartner/intro-call"
 							target="_blank"

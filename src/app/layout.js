@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";
 import Header from "./ui/layout/header";
 
 // Font
@@ -32,11 +33,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" className="scroll-smooth">
+		<html lang="en" className="scroll-smooth light">
 			<body className={inter.className}>
-				<Header />
-				{children}
-				{/* <Footer /> */}
+				<Providers>
+					<Header />
+					{children}
+					{/* <Footer /> */}
+				</Providers>
 			</body>
 		</html>
 	);
