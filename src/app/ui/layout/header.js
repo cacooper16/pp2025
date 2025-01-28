@@ -2,11 +2,11 @@ export default function Header() {
 	return (
 		<header className="fixed top-0 left-0 w-full backdrop-blur-md z-50">
 			{/* Semi-transparent padded area above the menu */}
-			<div className="h-6 bg-transparent"></div>
+			<div className="h-5 bg-transparent"></div>
 
 			{/* Main menu content with solid white background and shadow */}
 			<div className="bg-white shadow-menu mx-auto max-w-7xl rounded-xl">
-				<nav className="flex items-center justify-between px-8 py-4">
+				<nav className="flex items-center justify-between px-8 py-5">
 					{/* Logo */}
 					<div className="flex items-center space-x-2">
 						<a href="" className="flex items-center space-x-2">
@@ -24,7 +24,7 @@ export default function Header() {
 					<ul className="flex font-semibold text-center">
 						<li className="w-20 mx-4">
 							<a
-								href="#"
+								href="#services"
 								className="text-gray-700 hover:text-gray-900 hover:underline"
 							>
 								Services
@@ -32,7 +32,7 @@ export default function Header() {
 						</li>
 						<li className="w-20 mx-4">
 							<a
-								href="#"
+								href="#work"
 								className="text-gray-700 hover:text-gray-900 hover:underline"
 							>
 								Work

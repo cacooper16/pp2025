@@ -10,13 +10,15 @@ const inter = Inter({
 });
 
 export const metadata = {
-	title: "TO BE ADDED | ProductPartner",
+	title:
+		"End-to-end product solutions: strategy to design, development and growth | ProductPartner",
 	description: "TO BE ADDED.",
 	creator: "ProductPartner",
 	metadataBase: new URL("https://www.productpartner.io"),
 	openGraph: {
 		title: "TO BE ADDED | ProductPartner",
-		description: "TO BE ADDED.",
+		description:
+			"End-to-end product solutions: strategy to design, development and growth | ProductPartner",
 		url: "https://www.productpartner.io",
 		siteName: "ProductPartner",
 		images: [
