@@ -7,7 +7,7 @@ export function StrategyChip() {
 			size="md"
 			radius="sm"
 			classNames={{
-				base: "bg-blue-700 py-4 pointer-events-none",
+				base: "bg-zinc-700 py-4 pointer-events-none",
 				content:
 					"drop-shadow shadow-black text-white font-semibold px-2",
 			}}
@@ -24,7 +24,7 @@ export function DesignChip() {
 			size="md"
 			radius="sm"
 			classNames={{
-				base: "bg-blue-700 py-4 pointer-events-none",
+				base: "bg-zinc-700 py-4 pointer-events-none",
 				content:
 					"drop-shadow shadow-black text-white font-semibold px-2",
 			}}
@@ -41,7 +41,7 @@ export function DevelopmentChip() {
 			size="md"
 			radius="sm"
 			classNames={{
-				base: "bg-blue-700 py-4 pointer-events-none",
+				base: "bg-zinc-700 py-4 pointer-events-none",
 				content:
 					"drop-shadow shadow-black text-white font-semibold px-2",
 			}}
@@ -58,7 +58,7 @@ export function GrowthChip() {
 			size="md"
 			radius="sm"
 			classNames={{
-				base: "bg-blue-700 py-4 pointer-events-none",
+				base: "bg-zinc-700 py-4 pointer-events-none",
 				content:
 					"drop-shadow shadow-black text-white font-semibold px-2",
 			}}

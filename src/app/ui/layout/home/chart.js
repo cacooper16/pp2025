@@ -56,7 +56,7 @@ export default function CustomAreaChart() {
 		>
 			<div className="relative">
 				<h3 className="absolute left-8 top-8">
-					Handling the entire product life cycle...
+					Handling the entire product life cycle
 				</h3>
 			</div>
 			{inView && (

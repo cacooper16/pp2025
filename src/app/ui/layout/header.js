@@ -48,7 +48,7 @@ export default function Header() {
 						</li>
 						<li className="w-20 mx-4">
 							<a
-								href="#"
+								href="#contact"
 								className="text-gray-700 hover:text-gray-900 hover:underline"
 							>
 								Contact
