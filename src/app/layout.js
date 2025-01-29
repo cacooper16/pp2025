@@ -1,4 +1,5 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
+import dynamic from "next/dynamic";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
@@ -17,9 +18,9 @@ export const metadata = {
 	creator: "ProductPartner",
 	metadataBase: new URL("https://www.productpartner.io"),
 	openGraph: {
-		title: "TO BE ADDED | ProductPartner",
-		description:
+		title:
 			"End-to-end product solutions: strategy to design, development and growth | ProductPartner",
+		description: "TO BE ADDED...",
 		url: "https://www.productpartner.io",
 		siteName: "ProductPartner",
 		images: [
@@ -35,8 +36,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+	const CrispWithNoSSR = dynamic(() => import("./lib/crisp"));
 	return (
 		<html lang="en" className="scroll-smooth light">
+			<CrispWithNoSSR />
 			<body className={inter.className}>
 				<Providers>
 					<Header />
