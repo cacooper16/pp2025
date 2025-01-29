@@ -21,6 +21,9 @@ import {
 	useDisclosure,
 } from "@heroui/react";
 
+import { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
+
 export default function Home() {
 	// Show/hide `Work` section
 	const [hide, setHide] = React.useState();
@@ -29,6 +32,18 @@ export default function Home() {
 	const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
 	// Email form submission
+
+	// Cal.com Embed
+	useEffect(() => {
+		(async function () {
+			const cal = await getCalApi({ namespace: "intro-call" });
+			cal("ui", {
+				cssVarsPerTheme: { light: { "cal-brand": "#27272A" } },
+				hideEventTypeDetails: false,
+				layout: "month_view",
+			});
+		})();
+	}, []);
 
 	return (
 		<main>
@@ -46,15 +61,14 @@ export default function Home() {
 							<br />
 							from strategy to design, development and growth.
 						</p>
-						<a
-							href="https://cal.com/productpartner/intro-call"
-							target="_blank"
-							rel="noreferrer noopener"
+						<button
+							data-cal-namespace="intro-call"
+							data-cal-link="productpartner/intro-call"
+							data-cal-config='{"layout":"month_view"}'
+							className="bg-zinc-800 text-white px-8 py-4 rounded-lg hover:bg-blue-700 duration-300 transition-colors font-semibold mb-16 shadow-2xl shadow-zinc-800"
 						>
-							<button className="bg-zinc-800 text-white px-8 py-4 rounded-lg hover:bg-blue-700 duration-300 transition-colors font-semibold mb-16 shadow-2xl shadow-zinc-800">
-								Book a Call <span className="pl-2">&rsaquo;</span>
-							</button>
-						</a>
+							Book a Call <span className="pl-2">&rsaquo;</span>
+						</button>
 					</div>
 					<div className="text-center pb-32">
 						<div className="flex -space-x-4 justify-center mb-4">
@@ -715,13 +729,13 @@ export default function Home() {
 					</p>
 				</div>
 				<div className="mb-32 grid grid-cols-1 gap-4 md:grid-cols-2 md:max-w-2xl mx-auto">
-					<a
-						href="https://cal.com/productpartner/intro-call"
-						target="_blank"
-						rel="noreferrer noopener"
-						className="block transform transition-transform duration-300 hover:scale-105"
+					<button
+						data-cal-namespace="intro-call"
+						data-cal-link="productpartner/intro-call"
+						data-cal-config='{"layout":"month_view"}'
+						className="block transform transition-transform duration-300 hover:scale-105 text-left"
 					>
-						<div className="col-span-1 border rounded-tl-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group bg-white p-8">
+						<div className="col-span-1 border hover:border-zinc-600 rounded-tl-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group bg-white p-8">
 							<h4 className="font-medium text-lg mb-2">
 								<i className="bi bi-calendar mr-1"></i> Book a Call
 							</h4>
@@ -732,12 +746,12 @@ export default function Home() {
 								Pick a time <span>&rsaquo;</span>
 							</p>
 						</div>
-					</a>
+					</button>
 					<a
 						onClick={onOpen}
 						className="block transform transition-transform duration-300 hover:scale-105"
 					>
-						<div className="col-span-1 border rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300 hover:scale-105 bg-white p-8">
+						<div className="col-span-1 border hover:border-zinc-600  rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8">
 							<h4 className="font-medium text-lg mb-2">
 								<i className="bi bi-envelope mr-1"></i> Email Us
 							</h4>
@@ -750,13 +764,13 @@ export default function Home() {
 							</p>
 						</div>
 					</a>
-					<a
+					<button
 						onClick={() => {
 							window.$crisp.push(["do", "chat:open"]);
 						}}
 						className="block transform transition-transform duration-300 hover:scale-105"
 					>
-						<div className="col-span-1 border rounded-bl-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300 hover:scale-105 bg-white p-8">
+						<div className="col-span-1 border hover:border-zinc-600  rounded-bl-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
 							<h4 className="font-medium text-lg mb-2">
 								<i className="bi bi-lightning mr-1"></i> Chat Now
 							</h4>
@@ -768,12 +782,12 @@ export default function Home() {
 								Start chat <span>&rsaquo;</span>
 							</p>
 						</div>
-					</a>
+					</button>
 					<a
 						href=""
 						className="block transform transition-transform duration-300 hover:scale-105"
 					>
-						<div className="col-span-1 border rounded-br-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300 hover:scale-105 bg-white p-8">
+						<div className="col-span-1 border hover:border-zinc-600 rounded-br-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8">
 							<h4 className="font-medium text-lg mb-2">
 								<i className="bi bi-whatsapp mr-1"></i> Send a
 								WhatsApp
@@ -800,8 +814,7 @@ export default function Home() {
 						{(onClose) => (
 							<>
 								<ModalHeader className="py-8 font-medium text-lg">
-									<i className="bi bi-envelope mr-2"></i> Send us an
-									email...
+									<i className="bi bi-envelope mr-2"></i> Email Us
 								</ModalHeader>
 								<ModalBody className="gap-y-8">
 									<Input

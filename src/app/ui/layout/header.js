@@ -57,15 +57,14 @@ export default function Header() {
 					</ul>
 					{/* CTAs */}
 					<div className="flex items-center space-x-8">
-						<a
-							href="https://cal.com/productpartner/intro-call"
-							target="_blank"
-							rel="noreferrer noopener"
+						<button
+							data-cal-namespace="intro-call"
+							data-cal-link="productpartner/intro-call"
+							data-cal-config='{"layout":"month_view"}'
+							className="bg-zinc-800 text-white px-6 py-2 rounded-lg hover:bg-blue-700 font-semibold transition-colors duration-300"
 						>
-							<button className="bg-zinc-800 text-white px-6 py-2 rounded-lg hover:bg-blue-700 font-semibold transition-colors duration-300">
-								Book a Call
-							</button>
-						</a>
+							Book a Call
+						</button>
 					</div>
 				</nav>
 			</div>
