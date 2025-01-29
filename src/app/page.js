@@ -421,7 +421,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div id="work" className="bg-gray-50">
+				<div id="work" className="bg-gray-50/40">
 					<div className="container">
 						<div className="mx-auto py-32">
 							<div className="max-w-xl mx-auto">
