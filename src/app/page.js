@@ -227,59 +227,52 @@ export default function Home() {
 							<CustomAreaChart />
 
 							{/* Block B - Strategy */}
-							<div className="col-span-1 border h-[440px] rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300 hover:scale-105 bg-white">
+							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
 								<div className="h-[240px] w-full">
 									<img
-										src="/img/services/example.png"
-										className="w-full h-full object-cover"
-										alt="Service Example"
+										src="/img/services/strategy.png"
+										className="pl-8"
+										alt="Product Strategy with ProductPartner"
 									/>
 								</div>
-								<div className="px-8 py-4">
-									<h3 className="text-sm mb-2">
-										It always starts with a plan
+								<div className="px-8">
+									<h3 className="text-sm mt-12 mb-2">
+										It starts with a plan
 									</h3>
 									<h4 className="font-medium text-lg mb-2">
 										Strategy
 									</h4>
-									<p className="text-sm text-zinc-500 mb-4">
+									<p className="text-sm text-zinc-500 mb-8">
 										Conducting market research, defining the product
 										vision, setting clear objectives, and crafting a
 										roadmap for success.
-									</p>
-									<p className="text-sm group-hover:text-blue-700 duration-300 transition-colors">
-										Learn more <span>&rsaquo;</span>
 									</p>
 								</div>
 							</div>
 
 							{/* Block C - Design */}
-							<div className="col-span-1 border h-[440px] rounded-lg shadow-sm overflow-hidden  cursor-pointer group transform transition-transform duration-300 hover:scale-105 bg-white">
+							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
 								<div className="h-[240px] w-full">
 									<img
-										src="/img/services/example.png"
-										className="w-full h-full object-cover"
-										alt="Service Example"
+										src="/img/services/design.png"
+										alt="Product Design with ProductPartner"
 									/>
 								</div>
-								<div className="px-8 py-4">
-									<h3 className="text-sm mb-2">
+								<div className="px-8">
+									<h3 className="text-sm mt-12 mb-2">
 										Ideas begin to take shape
 									</h3>
 									<h4 className="font-medium text-lg mb-2">Design</h4>
-									<p className="text-sm text-zinc-500 mb-4">
+									<p className="text-sm text-zinc-500 mb-8">
 										Transforming ideas into intuitive user experiences
 										through thoughtful prototyping, testing and visual
 										design.
-									</p>
-									<p className="text-sm group-hover:text-blue-700 duration-300 transition-colors">
-										Learn more <span>&rsaquo;</span>
 									</p>
 								</div>
 							</div>
 
 							{/* Block D - Development */}
-							<div className="col-span-1 border h-[440px] rounded-lg md:rounded-t-lg md:rounded-bl-3xl md:rounded-br-lg shadow-sm overflow-hidden  cursor-pointer group transform transition-transform duration-300 hover:scale-105 bg-white">
+							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
 								<div className="h-[240px] w-full">
 									<img
 										src="/img/services/example.png"
@@ -287,25 +280,22 @@ export default function Home() {
 										alt="Service Example"
 									/>
 								</div>
-								<div className="px-8 py-4">
-									<h3 className="text-sm mb-2">
+								<div className="px-8">
+									<h3 className="text-sm mb-2 mt-12">
 										Bringing it all to life
 									</h3>
 									<h4 className="font-medium text-lg mb-2">
 										Development
 									</h4>
-									<p className="text-sm text-zinc-500 mb-4">
+									<p className="text-sm text-zinc-500 mb-8">
 										Building high-quality digital products in-house or
 										through collaboration with an external team.
-									</p>
-									<p className="text-sm group-hover:text-blue-700 duration-300 transition-colors">
-										Learn more <span>&rsaquo;</span>
 									</p>
 								</div>
 							</div>
 
 							{/* Block E - Growth */}
-							<div className="col-span-1 border h-[440px] rounded-b-3xl rounded-t-lg md:rounded-t-lg md:rounded-br-3xl md:rounded-bl-lg shadow-sm overflow-hidden  cursor-pointer group transform transition-transform duration-300 hover:scale-105 bg-white">
+							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
 								<div className="h-[240px] w-full">
 									<img
 										src="/img/services/example.png"
@@ -313,18 +303,15 @@ export default function Home() {
 										alt="Service Example"
 									/>
 								</div>
-								<div className="px-8 py-4">
-									<h3 className="text-sm mb-2">
+								<div className="px-8">
+									<h3 className="text-sm mb-2 mt-12">
 										The work never stops &#40;sorry&#41;
 									</h3>
 									<h4 className="font-medium text-lg mb-2">Growth</h4>
-									<p className="text-sm text-zinc-500 mb-4">
+									<p className="text-sm text-zinc-500 mb-8">
 										Analysing performance, refining functionality, and
 										supporting marketing and sales strategies for
 										sustained success.
-									</p>
-									<p className="text-sm group-hover:text-blue-700 duration-300 transition-colors">
-										Learn more <span>&rsaquo;</span>
 									</p>
 								</div>
 							</div>

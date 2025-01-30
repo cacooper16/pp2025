@@ -97,7 +97,11 @@ export default function CustomAreaChart() {
 						/>
 						<XAxis
 							dataKey="name"
-							tick={{ fontSize: 14, fontWeight: 500 }}
+							tick={{
+								fontSize: 14,
+								fontWeight: 400,
+								fill: "#27272A",
+							}}
 							tickLine={false}
 							axisLine={false}
 							dy={5}
