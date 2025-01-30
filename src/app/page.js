@@ -460,7 +460,7 @@ export default function Home() {
 											className="mx-auto relative z-10"
 										/>
 									</div>
-									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_55%_55%_at_50%_50%,#000_75%,transparent_100%)] z-0"></div>
+									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
