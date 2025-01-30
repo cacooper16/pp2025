@@ -453,13 +453,14 @@ export default function Home() {
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden">
-									<div className="h-full w-full bg-gray-50 p-8">
+								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-8 relative">
 										<img
 											src="/img/work/airfocus.png"
-											className="mx-auto"
+											className="mx-auto relative z-10"
 										/>
 									</div>
+									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_55%_55%_at_50%_50%,#000_75%,transparent_100%)] z-0"></div>
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
