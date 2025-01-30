@@ -454,8 +454,11 @@ export default function Home() {
 									</p>
 								</div>
 								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden">
-									<div className="relative h-full w-full bg-gray-50">
-										<div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+									<div className="h-full w-full bg-gray-50 p-8">
+										<img
+											src="/img/work/airfocus.png"
+											className="mx-auto"
+										/>
 									</div>
 								</div>
 							</div>
