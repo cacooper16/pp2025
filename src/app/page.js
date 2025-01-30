@@ -23,6 +23,7 @@ import {
 
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
+import { GrowthCard } from "./lib/growthcard";
 
 export default function Home() {
 	// Show/hide `Work` section
@@ -232,6 +233,7 @@ export default function Home() {
 									<img
 										src="/img/services/strategy.png"
 										alt="Product Strategy with ProductPartner"
+										className="w-full h-full object-cover"
 									/>
 								</div>
 								<div className="px-8">
@@ -251,10 +253,11 @@ export default function Home() {
 
 							{/* Block C - Design */}
 							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
-								<div className="h-[240px] w-full">
+								<div className="h-[246px] w-full">
 									<img
 										src="/img/services/design.png"
 										alt="Product Design with ProductPartner"
+										className="w-full h-full object-cover"
 									/>
 								</div>
 								<div className="px-8">
@@ -272,10 +275,11 @@ export default function Home() {
 
 							{/* Block D - Development */}
 							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
-								<div className="h-[240px] w-full">
+								<div className="h-[260px] w-full">
 									<img
 										src="/img/services/develop.png"
 										alt="Product Development with ProductPartner"
+										className="w-full h-full object-cover"
 									/>
 								</div>
 								<div className="px-8">
@@ -294,13 +298,10 @@ export default function Home() {
 
 							{/* Block E - Growth */}
 							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
-								<div className="h-[240px] w-full">
-									<img
-										src="/img/services/example.png"
-										className="w-full h-full object-cover"
-										alt="Service Example"
-									/>
+								<div className="h-[260px] w-full relative">
+									<GrowthCard />
 								</div>
+
 								<div className="px-8">
 									<h3 className="text-sm mb-2 mt-12">
 										The work never stops &#40;sorry&#41;
