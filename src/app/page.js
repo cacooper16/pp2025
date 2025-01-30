@@ -231,7 +231,6 @@ export default function Home() {
 								<div className="h-[240px] w-full">
 									<img
 										src="/img/services/strategy.png"
-										className="pl-8"
 										alt="Product Strategy with ProductPartner"
 									/>
 								</div>
@@ -275,9 +274,8 @@ export default function Home() {
 							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
 								<div className="h-[240px] w-full">
 									<img
-										src="/img/services/example.png"
-										className="w-full h-full object-cover"
-										alt="Service Example"
+										src="/img/services/develop.png"
+										alt="Product Development with ProductPartner"
 									/>
 								</div>
 								<div className="px-8">
