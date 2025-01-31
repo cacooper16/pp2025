@@ -917,7 +917,7 @@ export default function Home() {
 						</div>
 					</button>
 					<a
-						href="mailto:info@productpartner.io"
+						href="mailto:info@productpartner.io?subject=Contact%20from%20ProductPartner.io"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="transform transition-transform duration-300 md:hover:scale-105 block md:hidden"
