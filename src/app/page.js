@@ -78,6 +78,70 @@ export default function Home() {
 								<Tooltip
 									content={
 										<div className="text-center p-2">
+											<div className="font-semibold">Tom Maples</div>
+											<div>Founder at RevCat 🇬🇧</div>
+										</div>
+									}
+									showArrow={true}
+									closeDelay={100}
+								>
+									<img
+										className="w-16 h-16 rounded-full border-2 border-white"
+										src="/img/avatars/tom_maples.webp"
+										alt="Tom Maples"
+										width={64}
+										height={64}
+									/>
+								</Tooltip>
+							</div>
+							<div className="relative">
+								<Tooltip
+									content={
+										<div className="text-center p-2">
+											<div className="font-semibold">
+												Dr. Enrique Rios
+											</div>
+											<div>Founder at Clínica Bona 🇪🇸</div>
+										</div>
+									}
+									showArrow={true}
+									closeDelay={100}
+								>
+									<img
+										className="w-16 h-16 rounded-full border-2 border-white"
+										src="/img/avatars/enrique_rios.webp"
+										alt="Dr. Enrique Rios"
+										width={64}
+										height={64}
+									/>
+								</Tooltip>
+							</div>
+							<div className="relative">
+								<Tooltip
+									content={
+										<div className="text-center p-2">
+											<div className="font-semibold">
+												Evelyn Petro
+											</div>
+											<div>Founder at Café Bardin 🇪🇸</div>
+										</div>
+									}
+									showArrow={true}
+									closeDelay={100}
+								>
+									<img
+										className="w-16 h-16 rounded-full border-2 border-white"
+										src="/img/avatars/malte_scholz.webp"
+										alt="Evelyn Petro"
+										width={64}
+										height={64}
+									/>
+								</Tooltip>
+							</div>
+							<div className="relative">
+								<Tooltip
+									content={
+										<div className="text-center p-2">
 											<div className="font-semibold">
 												Malte Scholz
 											</div>
@@ -229,7 +293,10 @@ export default function Home() {
 							<CustomAreaChart />
 
 							{/* Block B - Strategy */}
-							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
+							<div
+								id="strategy"
+								className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white"
+							>
 								<div className="h-[240px] w-full">
 									<img
 										src="/img/services/strategy.png"
@@ -253,7 +320,10 @@ export default function Home() {
 							</div>
 
 							{/* Block C - Design */}
-							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
+							<div
+								id="design"
+								className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white"
+							>
 								<div className="h-[246px] w-full">
 									<img
 										src="/img/services/design.png"
@@ -275,7 +345,10 @@ export default function Home() {
 							</div>
 
 							{/* Block D - Development */}
-							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
+							<div
+								id="development"
+								className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white"
+							>
 								<div className="h-[260px] w-full">
 									<img
 										src="/img/services/develop.png"
@@ -298,7 +371,10 @@ export default function Home() {
 							</div>
 
 							{/* Block E - Growth */}
-							<div className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white">
+							<div
+								id="growth"
+								className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white"
+							>
 								<div className="h-[260px] w-full relative">
 									<GrowthCard />
 								</div>
@@ -426,9 +502,13 @@ export default function Home() {
 					<div className="mx-auto pt-32">
 						<div className="max-w-xl mx-auto">
 							<h3 className="text-center">Our Work</h3>
-							<h2 className="text-center">
+							<h2 className="text-center mb-2">
 								A snapshot of our successful partnerships
 							</h2>
+							<p className="text-center">
+								We&apos;ve curated a selection of different projects.
+								Get in touch to see more.
+							</p>
 						</div>
 						<div
 							className={`mt-32 mb-16 pb-16 grid grid-cols-1 gap-8 md:grid-cols-2 md:max-w-7xl mx-auto relative overflow-hidden ${
@@ -438,27 +518,33 @@ export default function Home() {
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
 								<div className="py-8 px-12">
 									<h4 className="font-medium text-2xl mb-4">
-										airfocus
+										Clínica Dental Bona
 									</h4>
 									<div className="flex gap-4 mb-4">
-										<StrategyChip />
+										<StrategyChip /> <DesignChip />{" "}
+										<DevelopmentChip /> <GrowthChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
-										Here is a short description about the company and
-										what we did for them. Here is a short description
-										about the company and what we did for them.
+										Multilingual presence built on a modern content
+										management system, boosting online visibility,
+										user engagement and bookings.
 									</p>
 									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
-										<a href="">
-											About airfocus <span>&rsaquo;</span>
+										<a
+											href="https://www.clinicadentalbona.com/en/dental-clinic-in-alicante/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
+											About Clínica Dental Bona <span>&rsaquo;</span>
 										</a>
 									</p>
 								</div>
 								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
 									<div className="h-full w-full bg-gray-50 p-8 relative">
 										<img
-											src="/img/work/airfocus.png"
+											src="/img/work/clinica-dental-bona.png"
 											className="mx-auto relative z-10"
+											alt="Our partnership with Clínica Dental Bona"
 										/>
 									</div>
 									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
@@ -472,12 +558,16 @@ export default function Home() {
 										<DevelopmentChip /> <GrowthChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
-										Here is a short description about the company and
-										what we did for them. Here is a short description
-										about the company and what we did for them.
+										Restructured product management practices and
+										revamped a B2B SaaS platform, enhancing support
+										for 7,000+ ecommerce sellers.
 									</p>
 									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
-										<a href="">
+										<a
+											href="https://www.edesk.com/about-us/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											About eDesk <span>&rsaquo;</span>
 										</a>
 									</p>
@@ -487,64 +577,7 @@ export default function Home() {
 										<img
 											src="/img/work/edesk.png"
 											className="mx-auto relative z-10"
-										/>
-									</div>
-									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
-								</div>
-							</div>
-							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
-									<h4 className="font-medium text-2xl mb-4">
-										Ashworth Research
-									</h4>
-									<div className="flex gap-4 mb-4">
-										<DesignChip /> <DevelopmentChip />
-									</div>
-									<p className="text-sm text-zinc-500 mb-4">
-										Here is a short description about the company and
-										what we did for them. Here is a short description
-										about the company and what we did for them.
-									</p>
-									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
-										<a href="">
-											About Ashworth Research <span>&rsaquo;</span>
-										</a>
-									</p>
-								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
-									<div className="h-full w-full bg-gray-50 p-8 relative">
-										<img
-											src="/img/work/ashworth-research.png"
-											className="mx-auto relative z-10"
-										/>
-									</div>
-									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
-								</div>
-							</div>
-							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
-									<h4 className="font-medium text-2xl mb-4">
-										Café Bardin
-									</h4>
-									<div className="flex gap-4 mb-4">
-										<DesignChip /> <DevelopmentChip />
-									</div>
-									<p className="text-sm text-zinc-500 mb-4">
-										Here is a short description about the company and
-										what we did for them. Here is a short description
-										about the company and what we did for them.
-									</p>
-									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
-										<a href="">
-											About Café Bardin <span>&rsaquo;</span>
-										</a>
-									</p>
-								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
-									<div className="h-full w-full bg-gray-50 p-8 relative">
-										<img
-											src="/img/work/cafe-bardin.png"
-											className="mx-auto relative z-10"
+											alt="Our partnership with eDesk"
 										/>
 									</div>
 									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
@@ -560,12 +593,16 @@ export default function Home() {
 										<DevelopmentChip /> <GrowthChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
-										Here is a short description about the company and
-										what we did for them. Here is a short description
-										about the company and what we did for them.
+										Led and executed product strategy for a multisided
+										platform (B2B, B2C, B2B2C), enhancing access to
+										healthcare across multiple countries.
 									</p>
 									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
-										<a href="">
+										<a
+											href="https://www.okadoc.com/en-ae/about-okadoc"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											About Okadoc <span>&rsaquo;</span>
 										</a>
 									</p>
@@ -575,6 +612,7 @@ export default function Home() {
 										<img
 											src="/img/work/okadoc.png"
 											className="mx-auto relative z-10"
+											alt="Our partnership with Okadoc"
 										/>
 									</div>
 									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
@@ -584,27 +622,32 @@ export default function Home() {
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
 								<div className="py-8 px-12">
 									<h4 className="font-medium text-2xl mb-4">
-										Clínica Dental Bona
+										Ashworth Research
 									</h4>
 									<div className="flex gap-4 mb-4">
-										<DesignChip /> <DevelopmentChip /> <GrowthChip />
+										<DesignChip /> <DevelopmentChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
-										Here is a short description about the company and
-										what we did for them. Here is a short description
-										about the company and what we did for them.
+										Designed and developed an engaging online presence
+										for Ashworth Research, a leading market and social
+										research consultancy for nonprofits.
 									</p>
 									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
-										<a href="">
-											About Clínica Dental Bona <span>&rsaquo;</span>
+										<a
+											href="https://www.ashworthresearch.co.uk/about"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
+											About Ashworth Research <span>&rsaquo;</span>
 										</a>
 									</p>
 								</div>
 								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
 									<div className="h-full w-full bg-gray-50 p-8 relative">
 										<img
-											src="/img/work/clinica-dental-bona.png"
+											src="/img/work/ashworth-research.png"
 											className="mx-auto relative z-10"
+											alt="Our partnership with Ashworth Research"
 										/>
 									</div>
 									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
@@ -613,27 +656,66 @@ export default function Home() {
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
 								<div className="py-8 px-12">
 									<h4 className="font-medium text-2xl mb-4">
-										Stealth Startup 👀
+										airfocus
 									</h4>
 									<div className="flex gap-4 mb-4">
-										<StrategyChip /> <DesignChip />
+										<StrategyChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
-										Here is a short description about the company and
-										what we did for them. Here is a short description
-										about the company and what we did for them.
+										Provided strategic guidance and client advisory
+										for airfocus, an AI-powered product management
+										platform with over $10M funding.
 									</p>
 									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
-										<a href="">
-											Coming soon <span>&rsaquo;</span>
+										<a
+											href="https://airfocus.com/about-us/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
+											About airfocus <span>&rsaquo;</span>
 										</a>
 									</p>
 								</div>
 								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
 									<div className="h-full w-full bg-gray-50 p-8 relative">
 										<img
-											src="/img/work/stealth.png"
+											src="/img/work/airfocus.png"
 											className="mx-auto relative z-10"
+											alt="Our partnership with airfocus"
+										/>
+									</div>
+									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
+								</div>
+							</div>
+							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
+								<div className="py-8 px-12">
+									<h4 className="font-medium text-2xl mb-4">
+										Café Bardin
+									</h4>
+									<div className="flex gap-4 mb-4">
+										<DesignChip /> <DevelopmentChip />
+									</div>
+									<p className="text-sm text-zinc-500 mb-4">
+										Created a dynamic online presence for Café Bardin,
+										a popular brunch spot in Alicante, to attract
+										English-speaking customers and drive footfall.
+									</p>
+									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
+										<a
+											href="http://www.cafebardin.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
+											About Café Bardin <span>&rsaquo;</span>
+										</a>
+									</p>
+								</div>
+								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-8 relative">
+										<img
+											src="/img/work/cafe-bardin.png"
+											className="mx-auto relative z-10"
+											alt="Our partnership with Café Bardin"
 										/>
 									</div>
 									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
@@ -648,12 +730,16 @@ export default function Home() {
 										<StrategyChip /> <DesignChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
-										Here is a short description about the company and
-										what we did for them. Here is a short description
-										about the company and what we did for them.
+										Conducted a comprehensive product review,
+										providing recommendations to address key
+										challenges and improve overall user experience.
 									</p>
 									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
-										<a href="">
+										<a
+											href="https://www.revcat.io/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											About RevCat <span>&rsaquo;</span>
 										</a>
 									</p>
@@ -663,13 +749,43 @@ export default function Home() {
 										<img
 											src="/img/work/revcat.png"
 											className="mx-auto relative z-10"
+											alt="Our partnership with RevCat"
+										/>
+									</div>
+									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
+								</div>
+							</div>
+							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
+								<div className="py-8 px-12">
+									<h4 className="font-medium text-2xl mb-4">
+										Stealth Startup 👀
+									</h4>
+									<div className="flex gap-4 mb-4">
+										<StrategyChip /> <DesignChip />{" "}
+										<DevelopmentChip />
+									</div>
+									<p className="text-sm text-zinc-500 mb-4">
+										Collaborating with a pre-launch startup: refining
+										their business model, designing the product and
+										selecting development partners.
+									</p>
+									<p className="text-sm mb-2">
+										Coming soon <span>🚀</span>
+									</p>
+								</div>
+								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-8 relative">
+										<img
+											src="/img/work/stealth.png"
+											className="mx-auto relative z-10"
+											alt="Our partnership with Stealth Startup"
 										/>
 									</div>
 									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
 								</div>
 							</div>
 							<div
-								className={`pointer-events-none absolute inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-gray-50 via-white-50/80 via-40% pb-8 pt-64 ${
+								className={`pointer-events-none absolute inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-gray-50 via-white/90 via-40% pb-8 pt-96 ${
 									hide ? "hidden" : ""
 								}`}
 							>
@@ -751,7 +867,7 @@ export default function Home() {
 			<div id="contact" className="border-t">
 				<div className="max-w-xl mx-auto pt-32 pb-16 relative">
 					<h3 className="text-center">Get in Touch</h3>
-					<h2 className="text-center">Let&apos;s talk</h2>
+					<h2 className="text-center mb-2">Let&apos;s talk</h2>
 					<p className="text-center">
 						Free discovery calls with no obligation.
 					</p>
@@ -775,11 +891,11 @@ export default function Home() {
 							</p>
 						</div>
 					</button>
-					<a
+					<button
 						onClick={onOpen}
 						className="block transform transition-transform duration-300 hover:scale-105"
 					>
-						<div className="col-span-1 border hover:border-zinc-600  rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8">
+						<div className="col-span-1 border hover:border-zinc-600  rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
 							<h4 className="font-medium text-lg mb-2">
 								<i className="bi bi-envelope mr-1"></i> Email Us
 							</h4>
@@ -791,7 +907,7 @@ export default function Home() {
 								Email us <span>&rsaquo;</span>
 							</p>
 						</div>
-					</a>
+					</button>
 					<button
 						onClick={() => {
 							window.$crisp.push(["do", "chat:open"]);
