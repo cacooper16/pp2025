@@ -52,7 +52,7 @@ export default function CustomAreaChart() {
 	return (
 		<div
 			ref={chartRef}
-			className="col-span-1 md:col-span-2 border rounded-t-3xl rounded-b-lg h-[440px] shadow-sm bg-white overflow-hidden py-8"
+			className="col-span-1 md:col-span-2 border rounded-t-3xl rounded-b-lg h-[440px] shadow-sm bg-white overflow-hidden py-8 hidden md:grid"
 		>
 			<div className="relative">
 				<h3 className="absolute left-8 top-8">
@@ -98,9 +98,11 @@ export default function CustomAreaChart() {
 						<XAxis
 							dataKey="name"
 							tick={{
-								fontSize: 14,
-								fontWeight: 400,
-								fill: "#27272A",
+								style: {
+									fontSize: 14,
+									fontWeight: 400,
+									fill: "#27272A",
+								},
 							}}
 							tickLine={false}
 							axisLine={false}

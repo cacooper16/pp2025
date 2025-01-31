@@ -51,28 +51,29 @@ export default function Home() {
 		<main>
 			<div className="bg-gradient-to-b from-white to-gray-100">
 				<div className="container">
-					<div className="mx-auto text-center py-32">
+					<div className="mx-auto lg:text-center pt-16 pb-8 lg:py-32">
 						<h1>
-							Crafting digital experiences <br />
+							Crafting digital experiences{" "}
+							<br className="hidden lg:block" />
 							<span className="text-transparent bg-gradient-to-b from-blue-400 to-blue-700 bg-clip-text animate-slideUp">
 								that actually deliver results
 							</span>
 						</h1>
 						<p className="h1-sub">
-							Providing end-to-end product development solutions:
-							<br />
+							Providing end-to-end product development solutions:{" "}
+							<br className="hidden lg:block" />
 							from strategy to design, development and growth.
 						</p>
 						<button
 							data-cal-namespace="intro-call"
 							data-cal-link="productpartner/intro-call"
 							data-cal-config='{"layout":"month_view"}'
-							className="bg-zinc-800 text-white px-8 py-4 rounded-lg hover:bg-blue-700 duration-300 transition-colors font-semibold mb-16 shadow-2xl shadow-zinc-800"
+							className="bg-zinc-800 text-white px-8 py-4 rounded-lg hover:bg-blue-700 duration-300 transition-colors font-semibold mb-8 lg:mb-16 shadow-2xl shadow-zinc-800"
 						>
 							Book a Call <span className="pl-2">&rsaquo;</span>
 						</button>
 					</div>
-					<div className="text-center pb-32">
+					<div className="text-center pb-16 lg:pb-32">
 						<div className="flex -space-x-4 justify-center mb-4">
 							<div className="relative">
 								<Tooltip
@@ -182,7 +183,7 @@ export default function Home() {
 									/>
 								</Tooltip>
 							</div>
-							<div className="relative">
+							<div className="hidden lg:relative">
 								<Tooltip
 									content={
 										<div className="text-center p-2">
@@ -202,7 +203,7 @@ export default function Home() {
 									/>
 								</Tooltip>
 							</div>
-							<div className="relative">
+							<div className="hidden lg:relative">
 								<Tooltip
 									content={
 										<div className="text-center p-2">
@@ -224,7 +225,7 @@ export default function Home() {
 									/>
 								</Tooltip>
 							</div>
-							<div className="relative">
+							<div className="hidden lg:relative">
 								<Tooltip
 									content={
 										<div className="text-center p-2">
@@ -246,7 +247,7 @@ export default function Home() {
 									/>
 								</Tooltip>
 							</div>
-							<div className="relative">
+							<div className="hidden lg:relative">
 								<Tooltip
 									content={
 										<div className="text-center p-2">
@@ -268,7 +269,10 @@ export default function Home() {
 							</div>
 						</div>
 						<p className="text-lg">
-							Chosen by founders &amp; leaders across the globe.
+							Chosen by founders &amp; leaders{" "}
+							<span className="hidden lg:block">
+								across the globe.
+							</span>
 						</p>
 						<img
 							src="/img/global/touches/blue-swish.svg"
@@ -281,21 +285,21 @@ export default function Home() {
 			</div>
 			<div id="services" className="bg-white">
 				<div className="container">
-					<div className="mx-auto py-32">
+					<div className="mx-auto py-16 lg:py-32">
 						<div className="max-w-xl mx-auto">
 							<h3 className="text-center">Our Specialism</h3>
 							<h2 className="text-center">
 								End-to-end digital product solutions
 							</h2>
 						</div>
-						<div className="my-32 grid grid-cols-1 gap-4 md:grid-cols-2 md:max-w-5xl mx-auto">
+						<div className="my-16 md:my-32 grid grid-cols-1 gap-4 md:grid-cols-2 md:max-w-5xl mx-auto">
 							{/* Block A - Chart */}
 							<CustomAreaChart />
 
 							{/* Block B - Strategy */}
 							<div
 								id="strategy"
-								className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white"
+								className="col-span-1 border rounded-t-3xl rounded-b-lg md:rounded-lg shadow-sm overflow-hidden bg-white"
 							>
 								<div className="h-[240px] w-full">
 									<img
@@ -304,7 +308,7 @@ export default function Home() {
 										className="w-full h-full object-cover"
 									/>
 								</div>
-								<div className="px-8">
+								<div className="px-4 lg:px-8">
 									<h3 className="text-sm mt-12 mb-2">
 										It starts with a plan
 									</h3>
@@ -331,7 +335,7 @@ export default function Home() {
 										className="w-full h-full object-cover"
 									/>
 								</div>
-								<div className="px-8">
+								<div className="px-4 lg:px-8">
 									<h3 className="text-sm mt-12 mb-2">
 										Ideas begin to take shape
 									</h3>
@@ -356,7 +360,7 @@ export default function Home() {
 										className="w-full h-full object-cover"
 									/>
 								</div>
-								<div className="px-8">
+								<div className="px-4 lg:px-8">
 									<h3 className="text-sm mb-2 mt-12">
 										Bringing it all to life
 									</h3>
@@ -373,13 +377,13 @@ export default function Home() {
 							{/* Block E - Growth */}
 							<div
 								id="growth"
-								className="col-span-1 border rounded-lg shadow-sm overflow-hidden bg-white"
+								className="col-span-1 border rounded-t-lg rounded-b-3xl lg:rounded-lg shadow-sm overflow-hidden bg-white"
 							>
 								<div className="h-[260px] w-full relative">
 									<GrowthCard />
 								</div>
 
-								<div className="px-8">
+								<div className="px-4 lg:px-8">
 									<h3 className="text-sm mb-2 mt-12">
 										The work never stops &#40;sorry&#41;
 									</h3>
@@ -484,8 +488,10 @@ export default function Home() {
 						</div>
 						<div>
 							<p className="text-lg text-center">
-								Harnessing top-tier technology to drive businesses
-								forward.
+								Harnessing top-tier technology{" "}
+								<span className="hidden md:block">
+									to drive businesses forward.
+								</span>
 							</p>
 							<img
 								src="/img/global/touches/blue-swish.svg"
@@ -499,28 +505,30 @@ export default function Home() {
 			</div>
 			<div id="work" className="bg-gray-50">
 				<div className="container">
-					<div className="mx-auto pt-32">
+					<div className="mx-auto pt-16 lg:pt-32">
 						<div className="max-w-xl mx-auto">
 							<h3 className="text-center">Our Work</h3>
 							<h2 className="text-center mb-2">
-								A snapshot of our successful partnerships
+								Our successful partnerships
 							</h2>
 							<p className="text-center">
-								We&apos;ve curated a selection of different projects.
-								Get in touch to see more.
+								A curated selection of varied projects.{" "}
+								<span className="md:block hidden">
+									Get in touch to see more.
+								</span>
 							</p>
 						</div>
 						<div
-							className={`mt-32 mb-16 pb-16 grid grid-cols-1 gap-8 md:grid-cols-2 md:max-w-7xl mx-auto relative overflow-hidden ${
+							className={`mt-16 lg:mt-32 mb-16 pb-16 grid grid-cols-1 gap-8 lg:grid-cols-2 md:max-w-7xl mx-auto relative overflow-hidden ${
 								hide ? "" : "max-h-[1200px]"
 							}`}
 						>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
+								<div className="py-8 px-8 md:px-12">
 									<h4 className="font-medium text-2xl mb-4">
 										Clínica Dental Bona
 									</h4>
-									<div className="flex gap-4 mb-4">
+									<div className="flex gap-4 mb-4 flex-wrap">
 										<StrategyChip /> <DesignChip />{" "}
 										<DevelopmentChip /> <GrowthChip />
 									</div>
@@ -539,8 +547,8 @@ export default function Home() {
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
-									<div className="h-full w-full bg-gray-50 p-8 relative">
+								<div className="mx-8 md:mx-12 border border-b-0 rounded-t-lg overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-4 md:p-8 relative">
 										<img
 											src="/img/work/clinica-dental-bona.png"
 											className="mx-auto relative z-10"
@@ -551,9 +559,9 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
+								<div className="py-8 px-8 md:px-12">
 									<h4 className="font-medium text-2xl mb-4">eDesk</h4>
-									<div className="flex gap-4 mb-4">
+									<div className="flex gap-4 mb-4 flex-wrap">
 										<StrategyChip /> <DesignChip />{" "}
 										<DevelopmentChip /> <GrowthChip />
 									</div>
@@ -572,8 +580,8 @@ export default function Home() {
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
-									<div className="h-full w-full bg-gray-50 p-8 relative">
+								<div className="mx-8 md:mx-12 border border-b-0 rounded-t-lg overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-4 md:p-8 relative">
 										<img
 											src="/img/work/edesk.png"
 											className="mx-auto relative z-10"
@@ -584,11 +592,11 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
+								<div className="py-8 px-8 md:px-12">
 									<h4 className="font-medium text-2xl mb-4">
 										Okadoc
 									</h4>
-									<div className="flex gap-4 mb-4">
+									<div className="flex gap-4 mb-4 flex-wrap">
 										<StrategyChip /> <DesignChip />{" "}
 										<DevelopmentChip /> <GrowthChip />
 									</div>
@@ -607,8 +615,8 @@ export default function Home() {
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
-									<div className="h-full w-full bg-gray-50 p-8 relative">
+								<div className="mx-8 md:mx-12 border border-b-0 rounded-t-lg overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-4 md:p-8 relative">
 										<img
 											src="/img/work/okadoc.png"
 											className="mx-auto relative z-10"
@@ -620,11 +628,11 @@ export default function Home() {
 							</div>
 
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
+								<div className="py-8 px-8 md:px-12">
 									<h4 className="font-medium text-2xl mb-4">
 										Ashworth Research
 									</h4>
-									<div className="flex gap-4 mb-4">
+									<div className="flex gap-4 mb-4 flex-wrap">
 										<DesignChip /> <DevelopmentChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
@@ -642,8 +650,8 @@ export default function Home() {
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
-									<div className="h-full w-full bg-gray-50 p-8 relative">
+								<div className="mx-8 md:mx-12 border border-b-0 rounded-t-lg overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-4 md:p-8 relative">
 										<img
 											src="/img/work/ashworth-research.png"
 											className="mx-auto relative z-10"
@@ -654,11 +662,11 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
+								<div className="py-8 px-8 md:px-12">
 									<h4 className="font-medium text-2xl mb-4">
 										airfocus
 									</h4>
-									<div className="flex gap-4 mb-4">
+									<div className="flex gap-4 mb-4 flex-wrap">
 										<StrategyChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
@@ -676,8 +684,8 @@ export default function Home() {
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
-									<div className="h-full w-full bg-gray-50 p-8 relative">
+								<div className="mx-8 md:mx-12 border border-b-0 rounded-t-lg overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-4 md:p-8 relative">
 										<img
 											src="/img/work/airfocus.png"
 											className="mx-auto relative z-10"
@@ -688,11 +696,11 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
+								<div className="py-8 px-8 md:px-12">
 									<h4 className="font-medium text-2xl mb-4">
 										Café Bardin
 									</h4>
-									<div className="flex gap-4 mb-4">
+									<div className="flex gap-4 mb-4 flex-wrap">
 										<DesignChip /> <DevelopmentChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
@@ -710,8 +718,8 @@ export default function Home() {
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
-									<div className="h-full w-full bg-gray-50 p-8 relative">
+								<div className="mx-8 md:mx-12 border border-b-0 rounded-t-lg overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-4 md:p-8 relative">
 										<img
 											src="/img/work/cafe-bardin.png"
 											className="mx-auto relative z-10"
@@ -722,11 +730,11 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
+								<div className="py-8 px-8 md:px-12">
 									<h4 className="font-medium text-2xl mb-4">
 										RevCat
 									</h4>
-									<div className="flex gap-4 mb-4">
+									<div className="flex gap-4 mb-4 flex-wrap">
 										<StrategyChip /> <DesignChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
@@ -744,8 +752,8 @@ export default function Home() {
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
-									<div className="h-full w-full bg-gray-50 p-8 relative">
+								<div className="mx-8 md:mx-12 border border-b-0 rounded-t-lg overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-4 md:p-8 relative">
 										<img
 											src="/img/work/revcat.png"
 											className="mx-auto relative z-10"
@@ -756,11 +764,11 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
+								<div className="py-8 px-8 md:px-12">
 									<h4 className="font-medium text-2xl mb-4">
 										Stealth Startup 👀
 									</h4>
-									<div className="flex gap-4 mb-4">
+									<div className="flex gap-4 mb-4 flex-wrap">
 										<StrategyChip /> <DesignChip />{" "}
 										<DevelopmentChip />
 									</div>
@@ -773,8 +781,8 @@ export default function Home() {
 										Coming soon <span>🚀</span>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
-									<div className="h-full w-full bg-gray-50 p-8 relative">
+								<div className="mx-8 md:mx-12 border border-b-0 rounded-t-lg overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-4 md:p-8 relative">
 										<img
 											src="/img/work/stealth.png"
 											className="mx-auto relative z-10"
@@ -792,7 +800,7 @@ export default function Home() {
 								<button
 									type="button"
 									onClick={() => setHide(true)}
-									className="bg-zinc-800 text-white px-8 py-4 rounded-lg hover:bg-blue-700 duration-300 transition-colors font-semibold mb-16 shadow-2xl shadow-zinc-800 pointer-events-auto"
+									className="bg-zinc-800 text-white px-8 py-4 rounded-lg hover:bg-blue-700 duration-300 transition-colors font-semibold mb-16 shadow-2xl shadow-zinc-800 pointer-events-auto z-50"
 								>
 									View More <span className="pl-2">▾</span>
 								</button>
