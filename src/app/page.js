@@ -901,7 +901,7 @@ export default function Home() {
 					<button
 						type="button"
 						onClick={onOpen}
-						className="block transform transition-transform duration-300 md:hover:scale-105"
+						className="transform transition-transform duration-300 md:hover:scale-105 md:block hidden"
 					>
 						<div className="col-span-1 border hover:border-zinc-600 md:rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
 							<h4 className="font-medium text-lg mb-2">
@@ -916,6 +916,25 @@ export default function Home() {
 							</p>
 						</div>
 					</button>
+					<a
+						href="mailto:info@productpartner.io"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="transform transition-transform duration-300 md:hover:scale-105 block md:hidden"
+					>
+						<div className="col-span-1 border hover:border-zinc-600 md:rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
+							<h4 className="font-medium text-lg mb-2">
+								<i className="bi bi-envelope mr-1"></i> Email Us
+							</h4>
+							<p className="text-sm text-zinc-500 mb-4">
+								Prefer to email? Drop us a message and we&apos;ll get
+								back to you.
+							</p>
+							<p className="text-sm group-hover:text-blue-700 duration-300 transition-colors">
+								Email us <span>&rsaquo;</span>
+							</p>
+						</div>
+					</a>
 					<button
 						type="button"
 						onClick={() => {
