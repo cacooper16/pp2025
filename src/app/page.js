@@ -5,6 +5,7 @@ import React from "react";
 import CustomAreaChart from "./ui/layout/home/chart";
 import {
 	DesignChip,
+	DevelopmentChip,
 	GrowthChip,
 	StrategyChip,
 } from "./ui/layout/home/chips";
@@ -467,7 +468,8 @@ export default function Home() {
 								<div className="py-8 px-12">
 									<h4 className="font-medium text-2xl mb-4">eDesk</h4>
 									<div className="flex gap-4 mb-4">
-										<StrategyChip /> <DesignChip /> <GrowthChip />
+										<StrategyChip /> <DesignChip />{" "}
+										<DevelopmentChip /> <GrowthChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
 										Here is a short description about the company and
@@ -480,19 +482,23 @@ export default function Home() {
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden">
-									<div className="relative h-full w-full bg-gray-50">
-										<div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-8 relative">
+										<img
+											src="/img/work/edesk.png"
+											className="mx-auto relative z-10"
+										/>
 									</div>
+									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
 								<div className="py-8 px-12">
 									<h4 className="font-medium text-2xl mb-4">
-										airfocus
+										Ashworth Research
 									</h4>
 									<div className="flex gap-4 mb-4">
-										<StrategyChip />
+										<DesignChip /> <DevelopmentChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
 										Here is a short description about the company and
@@ -501,46 +507,27 @@ export default function Home() {
 									</p>
 									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
 										<a href="">
-											About airfocus <span>&rsaquo;</span>
+											About Ashworth Research <span>&rsaquo;</span>
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden">
-									<div className="relative h-full w-full bg-gray-50">
-										<div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-8 relative">
+										<img
+											src="/img/work/ashworth-research.png"
+											className="mx-auto relative z-10"
+										/>
 									</div>
-								</div>
-							</div>
-							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
-									<h4 className="font-medium text-2xl mb-4">eDesk</h4>
-									<div className="flex gap-4 mb-4">
-										<StrategyChip /> <DesignChip /> <GrowthChip />
-									</div>
-									<p className="text-sm text-zinc-500 mb-4">
-										Here is a short description about the company and
-										what we did for them. Here is a short description
-										about the company and what we did for them.
-									</p>
-									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
-										<a href="">
-											About eDesk <span>&rsaquo;</span>
-										</a>
-									</p>
-								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden">
-									<div className="relative h-full w-full bg-gray-50">
-										<div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
-									</div>
+									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
 								<div className="py-8 px-12">
 									<h4 className="font-medium text-2xl mb-4">
-										airfocus
+										Café Bardin
 									</h4>
 									<div className="flex gap-4 mb-4">
-										<StrategyChip />
+										<DesignChip /> <DevelopmentChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
 										Here is a short description about the company and
@@ -549,46 +536,28 @@ export default function Home() {
 									</p>
 									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
 										<a href="">
-											About airfocus <span>&rsaquo;</span>
+											About Café Bardin <span>&rsaquo;</span>
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden">
-									<div className="relative h-full w-full bg-gray-50">
-										<div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-8 relative">
+										<img
+											src="/img/work/cafe-bardin.png"
+											className="mx-auto relative z-10"
+										/>
 									</div>
-								</div>
-							</div>
-							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
-								<div className="py-8 px-12">
-									<h4 className="font-medium text-2xl mb-4">eDesk</h4>
-									<div className="flex gap-4 mb-4">
-										<StrategyChip /> <DesignChip /> <GrowthChip />
-									</div>
-									<p className="text-sm text-zinc-500 mb-4">
-										Here is a short description about the company and
-										what we did for them. Here is a short description
-										about the company and what we did for them.
-									</p>
-									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
-										<a href="">
-											About eDesk <span>&rsaquo;</span>
-										</a>
-									</p>
-								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden">
-									<div className="relative h-full w-full bg-gray-50">
-										<div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
-									</div>
+									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
 								<div className="py-8 px-12">
 									<h4 className="font-medium text-2xl mb-4">
-										airfocus
+										Okadoc
 									</h4>
 									<div className="flex gap-4 mb-4">
-										<StrategyChip />
+										<StrategyChip /> <DesignChip />{" "}
+										<DevelopmentChip /> <GrowthChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
 										Here is a short description about the company and
@@ -597,21 +566,57 @@ export default function Home() {
 									</p>
 									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
 										<a href="">
-											About airfocus <span>&rsaquo;</span>
+											About Okadoc <span>&rsaquo;</span>
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden">
-									<div className="relative h-full w-full bg-gray-50">
-										<div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-8 relative">
+										<img
+											src="/img/work/okadoc.png"
+											className="mx-auto relative z-10"
+										/>
 									</div>
+									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
+								</div>
+							</div>
+
+							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
+								<div className="py-8 px-12">
+									<h4 className="font-medium text-2xl mb-4">
+										Clínica Dental Bona
+									</h4>
+									<div className="flex gap-4 mb-4">
+										<DesignChip /> <DevelopmentChip /> <GrowthChip />
+									</div>
+									<p className="text-sm text-zinc-500 mb-4">
+										Here is a short description about the company and
+										what we did for them. Here is a short description
+										about the company and what we did for them.
+									</p>
+									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
+										<a href="">
+											About Clínica Dental Bona <span>&rsaquo;</span>
+										</a>
+									</p>
+								</div>
+								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-8 relative">
+										<img
+											src="/img/work/clinica-dental-bona.png"
+											className="mx-auto relative z-10"
+										/>
+									</div>
+									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
 								</div>
 							</div>
 							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
 								<div className="py-8 px-12">
-									<h4 className="font-medium text-2xl mb-4">eDesk</h4>
+									<h4 className="font-medium text-2xl mb-4">
+										Stealth Startup 👀
+									</h4>
 									<div className="flex gap-4 mb-4">
-										<StrategyChip /> <DesignChip /> <GrowthChip />
+										<StrategyChip /> <DesignChip />
 									</div>
 									<p className="text-sm text-zinc-500 mb-4">
 										Here is a short description about the company and
@@ -620,18 +625,51 @@ export default function Home() {
 									</p>
 									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
 										<a href="">
-											About eDesk <span>&rsaquo;</span>
+											Coming soon <span>&rsaquo;</span>
 										</a>
 									</p>
 								</div>
-								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden">
-									<div className="relative h-full w-full bg-gray-50">
-										<div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-8 relative">
+										<img
+											src="/img/work/stealth.png"
+											className="mx-auto relative z-10"
+										/>
 									</div>
+									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
+								</div>
+							</div>
+							<div className="col-span-1 border bg-white rounded-lg shadow-md overflow-hidden">
+								<div className="py-8 px-12">
+									<h4 className="font-medium text-2xl mb-4">
+										RevCat
+									</h4>
+									<div className="flex gap-4 mb-4">
+										<StrategyChip /> <DesignChip />
+									</div>
+									<p className="text-sm text-zinc-500 mb-4">
+										Here is a short description about the company and
+										what we did for them. Here is a short description
+										about the company and what we did for them.
+									</p>
+									<p className="text-sm hover:text-blue-700 duration-300 transition-colors mb-2">
+										<a href="">
+											About RevCat <span>&rsaquo;</span>
+										</a>
+									</p>
+								</div>
+								<div className="mx-12 border border-b-0 rounded-t-lg h-[320px] overflow-hidden relative">
+									<div className="h-full w-full bg-gray-50 p-8 relative">
+										<img
+											src="/img/work/revcat.png"
+											className="mx-auto relative z-10"
+										/>
+									</div>
+									<div className="absolute inset-0 h-full w-full bg-[radial-gradient(#e0e2e7_1.5px,transparent_1px)] [background-size:15px_15px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,#000_70%,transparent_100%)] z-0"></div>
 								</div>
 							</div>
 							<div
-								className={`pointer-events-none absolute inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-gray-50 via-gray-50/80 via-40% pb-8 pt-64 ${
+								className={`pointer-events-none absolute inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-gray-50 via-white-50/80 via-40% pb-8 pt-64 ${
 									hide ? "hidden" : ""
 								}`}
 							>
