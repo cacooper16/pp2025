@@ -508,13 +508,11 @@ export default function Home() {
 					<div className="mx-auto pt-16 lg:pt-32">
 						<div className="max-w-xl mx-auto">
 							<h3 className="text-center">Our Work</h3>
-							<h2 className="text-center mb-2">
-								Our successful partnerships
-							</h2>
+							<h2 className="text-center mb-2">Success stories</h2>
 							<p className="text-center">
-								A curated selection of varied projects.{" "}
+								A curated selection of varied partnerships.{" "}
 								<span className="md:block hidden">
-									Get in touch to see more.
+									<br /> Get in touch to discover more.
 								</span>
 							</p>
 						</div>
