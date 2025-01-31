@@ -884,9 +884,9 @@ export default function Home() {
 						data-cal-link="productpartner/intro-call"
 						data-cal-config='{"layout":"month_view"}'
 						type="button"
-						className="block transform transition-transform duration-300 hover:scale-105 text-left"
+						className="block transform transition-transform duration-300 md:hover:scale-105"
 					>
-						<div className="col-span-1 border hover:border-zinc-600 rounded-tl-3xl rounded-tr-3xl rounded-b-lg md:rounded-tl-3xl md:rounded-lg shadow-sm overflow-hidden cursor-pointer group bg-white p-8">
+						<div className="col-span-1 border hover:border-zinc-600 rounded-tl-3xl rounded-tr-3xl rounded-b-lg md:rounded-tl-3xl md:rounded-lg shadow-sm overflow-hidden cursor-pointer group bg-white p-8  text-left">
 							<h4 className="font-medium text-lg mb-2">
 								<i className="bi bi-calendar mr-1"></i> Book a Call
 							</h4>
@@ -900,8 +900,11 @@ export default function Home() {
 					</button>
 					<button
 						type="button"
-						onClick={onOpen}
-						className="block transform transition-transform duration-300 hover:scale-105"
+						onClick={(e) => {
+							e.preventDefault();
+							onOpen();
+						}}
+						className="block transform transition-transform duration-300 md:hover:scale-105"
 					>
 						<div className="col-span-1 border hover:border-zinc-600 md:rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
 							<h4 className="font-medium text-lg mb-2">
@@ -921,7 +924,7 @@ export default function Home() {
 						onClick={() => {
 							window.$crisp.push(["do", "chat:open"]);
 						}}
-						className="block transform transition-transform duration-300 hover:scale-105"
+						className="block transform transition-transform duration-300 md:hover:scale-105"
 					>
 						<div className="col-span-1 border hover:border-zinc-600  md:rounded-bl-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
 							<h4 className="font-medium text-lg mb-2">
