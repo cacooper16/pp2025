@@ -183,7 +183,7 @@ export default function Home() {
 									/>
 								</Tooltip>
 							</div>
-							<div className="hidden lg:relative">
+							<div className="hidden lg:block relative">
 								<Tooltip
 									content={
 										<div className="text-center p-2">
@@ -203,7 +203,7 @@ export default function Home() {
 									/>
 								</Tooltip>
 							</div>
-							<div className="hidden lg:relative">
+							<div className="hidden lg:block relative">
 								<Tooltip
 									content={
 										<div className="text-center p-2">
@@ -225,7 +225,7 @@ export default function Home() {
 									/>
 								</Tooltip>
 							</div>
-							<div className="hidden lg:relative">
+							<div className="hidden lg:block relative">
 								<Tooltip
 									content={
 										<div className="text-center p-2">
@@ -247,7 +247,7 @@ export default function Home() {
 									/>
 								</Tooltip>
 							</div>
-							<div className="hidden lg:relative">
+							<div className="hidden lg:block relative">
 								<Tooltip
 									content={
 										<div className="text-center p-2">
@@ -512,7 +512,7 @@ export default function Home() {
 							<p className="text-center">
 								A curated selection of varied partnerships.{" "}
 								<span className="md:block hidden">
-									<br /> Get in touch to discover more.
+									Get in touch to discover more.
 								</span>
 							</p>
 						</div>
