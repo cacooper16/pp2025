@@ -883,6 +883,7 @@ export default function Home() {
 						data-cal-namespace="intro-call"
 						data-cal-link="productpartner/intro-call"
 						data-cal-config='{"layout":"month_view"}'
+						type="button"
 						className="block transform transition-transform duration-300 hover:scale-105 text-left"
 					>
 						<div className="col-span-1 border hover:border-zinc-600 rounded-tl-3xl rounded-tr-3xl rounded-b-lg md:rounded-tl-3xl md:rounded-lg shadow-sm overflow-hidden cursor-pointer group bg-white p-8">
@@ -898,6 +899,7 @@ export default function Home() {
 						</div>
 					</button>
 					<button
+						type="button"
 						onClick={onOpen}
 						className="block transform transition-transform duration-300 hover:scale-105"
 					>
@@ -915,6 +917,7 @@ export default function Home() {
 						</div>
 					</button>
 					<button
+						type="button"
 						onClick={() => {
 							window.$crisp.push(["do", "chat:open"]);
 						}}
