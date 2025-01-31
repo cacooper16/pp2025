@@ -397,7 +397,7 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="flex flex-row gap-8 items-center flex-wrap w-full justify-center relative py-4">
+						<div className="flex flex-row gap-8 items-center flex-wrap w-full justify-center relative pt-2 md:py-4">
 							{/* Node.js Logo */}
 							<img
 								alt="Node.js"
@@ -871,21 +871,21 @@ export default function Home() {
 				</div>
 			</div>
 			<div id="contact" className="border-t">
-				<div className="max-w-xl mx-auto pt-32 pb-16 relative">
+				<div className="max-w-xl mx-auto pt-16 lg:pt-32 pb-8 lg:pb-16 relative">
 					<h3 className="text-center">Get in Touch</h3>
 					<h2 className="text-center mb-2">Let&apos;s talk</h2>
 					<p className="text-center">
 						Free discovery calls with no obligation.
 					</p>
 				</div>
-				<div className="mb-32 grid grid-cols-1 gap-4 md:grid-cols-2 md:max-w-2xl mx-auto">
+				<div className="mb-16 lg:mb-32 grid grid-cols-1 gap-4 md:grid-cols-2 md:max-w-2xl md:mx-auto mx-8">
 					<button
 						data-cal-namespace="intro-call"
 						data-cal-link="productpartner/intro-call"
 						data-cal-config='{"layout":"month_view"}'
 						className="block transform transition-transform duration-300 hover:scale-105 text-left"
 					>
-						<div className="col-span-1 border hover:border-zinc-600 rounded-tl-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group bg-white p-8">
+						<div className="col-span-1 border hover:border-zinc-600 rounded-tl-3xl rounded-tr-3xl rounded-b-lg md:rounded-tl-3xl md:rounded-lg shadow-sm overflow-hidden cursor-pointer group bg-white p-8">
 							<h4 className="font-medium text-lg mb-2">
 								<i className="bi bi-calendar mr-1"></i> Book a Call
 							</h4>
@@ -901,7 +901,7 @@ export default function Home() {
 						onClick={onOpen}
 						className="block transform transition-transform duration-300 hover:scale-105"
 					>
-						<div className="col-span-1 border hover:border-zinc-600  rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
+						<div className="col-span-1 border hover:border-zinc-600 md:rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
 							<h4 className="font-medium text-lg mb-2">
 								<i className="bi bi-envelope mr-1"></i> Email Us
 							</h4>
@@ -920,7 +920,7 @@ export default function Home() {
 						}}
 						className="block transform transition-transform duration-300 hover:scale-105"
 					>
-						<div className="col-span-1 border hover:border-zinc-600  rounded-bl-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
+						<div className="col-span-1 border hover:border-zinc-600  md:rounded-bl-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
 							<h4 className="font-medium text-lg mb-2">
 								<i className="bi bi-lightning mr-1"></i> Chat Now
 							</h4>
@@ -937,7 +937,7 @@ export default function Home() {
 						href=""
 						className="block transform transition-transform duration-300 hover:scale-105"
 					>
-						<div className="col-span-1 border hover:border-zinc-600 rounded-br-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8">
+						<div className="col-span-1 border hover:border-zinc-600 rounded-bl-3xl rounded-br-3xl rounded-t-lg md:rounded-br-3xl md:rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8">
 							<h4 className="font-medium text-lg mb-2">
 								<i className="bi bi-whatsapp mr-1"></i> Send a
 								WhatsApp
