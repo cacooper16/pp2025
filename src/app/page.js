@@ -898,9 +898,9 @@ export default function Home() {
 							</p>
 						</div>
 					</button>
-					<Button
+					<button
 						type="button"
-						onPress={onOpen}
+						onClick={onOpen}
 						className="block transform transition-transform duration-300 md:hover:scale-105"
 					>
 						<div className="col-span-1 border hover:border-zinc-600 md:rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
@@ -915,7 +915,7 @@ export default function Home() {
 								Email us <span>&rsaquo;</span>
 							</p>
 						</div>
-					</Button>
+					</button>
 					<button
 						type="button"
 						onClick={() => {
