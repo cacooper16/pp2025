@@ -898,15 +898,12 @@ export default function Home() {
 							</p>
 						</div>
 					</button>
-					<button
+					<Button
 						type="button"
-						onClick={(e) => {
-							e.preventDefault();
-							onOpen();
-						}}
+						onPress={onOpen}
 						className="block transform transition-transform duration-300 md:hover:scale-105"
 					>
-						<span className="col-span-1 border hover:border-zinc-600 md:rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
+						<div className="col-span-1 border hover:border-zinc-600 md:rounded-tr-3xl rounded-lg shadow-sm overflow-hidden cursor-pointer group transform transition-transform duration-300  bg-white p-8 text-left">
 							<h4 className="font-medium text-lg mb-2">
 								<i className="bi bi-envelope mr-1"></i> Email Us
 							</h4>
@@ -917,8 +914,8 @@ export default function Home() {
 							<p className="text-sm group-hover:text-blue-700 duration-300 transition-colors">
 								Email us <span>&rsaquo;</span>
 							</p>
-						</span>
-					</button>
+						</div>
+					</Button>
 					<button
 						type="button"
 						onClick={() => {
