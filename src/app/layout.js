@@ -38,7 +38,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	const CrispWithNoSSR = dynamic(() => import("./lib/crisp"));
 	return (
-		<html lang="en" className="light">
+		<html lang="en" className="scroll-smooth light">
 			<CrispWithNoSSR />
 			<body className={inter.className}>
 				<Providers>
